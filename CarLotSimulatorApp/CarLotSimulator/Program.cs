@@ -15,6 +15,10 @@ namespace CarLotSimulator
             //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise(). DONE
             //The methods should take one string parameter: the respective noise property
 
+            Console.WriteLine($"Number of cars in car lot {CarLot.numberOfCars}");
+            CarLot.numberOfCars++;
+            Console.WriteLine();
+
             var suv = new Car();
            
             suv.Year = 2023;
@@ -26,11 +30,21 @@ namespace CarLotSimulator
 
             suv.MakeEngineNoise();
             suv.MakeHonkNoise();
+            Console.WriteLine();
+
+            Console.WriteLine($"Number of cars in car lot {CarLot.numberOfCars}");
+            CarLot.numberOfCars++;
+            Console.WriteLine();
 
             var truck = new Car(2010, "Dodge", "Ram", "ROAR", "BOOM", true);
 
             truck.MakeEngineNoise();
             truck.MakeHonkNoise();
+            Console.WriteLine();
+
+            Console.WriteLine($"Number of cars in car lot {CarLot.numberOfCars}");
+            CarLot.numberOfCars++;
+            Console.WriteLine();
 
             var motorcycle = new Car() 
             { Year = 2022, 
@@ -44,6 +58,9 @@ namespace CarLotSimulator
             motorcycle.MakeHonkNoise();
             Console.WriteLine();
 
+            Console.WriteLine($"Number of cars in car lot {CarLot.numberOfCars}");
+            CarLot.numberOfCars++;
+            Console.WriteLine();
 
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
@@ -71,6 +88,7 @@ namespace CarLotSimulator
             }
             Console.WriteLine("<><><><><><><><><><><><><><><><><><><>");
 
+            
 
 
 
